@@ -1,0 +1,283 @@
+.header-wrapper {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px 3px 40px;
+    background-image: url('../../images/header-bg1.png'), linear-gradient(to bottom, rgba(0, 0, 0), rgb(44, 44, 54));
+    background-position: top;
+    background-color: #16151f;
+    user-select: none;
+
+    .back-btn {
+        width: 139px;
+        height: 54px;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        border: none;
+        background: url('../../images/header-btn-bg1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        & img {
+            width: 50px;
+            height: 45px;
+            margin-right: 11px;
+        }
+
+        &:hover {
+            font-size: 19px;
+
+            & img {
+                width: 55px;
+                height: 50px;
+            }
+        }
+    }
+
+    .currency {
+        width: 455px;
+        display: flex;
+        justify-content: space-between;
+
+        .coins {
+            width: 200px;
+            height: 69px;
+            display: flex;
+            align-items: center;
+
+            & img {
+                position: absolute;
+            }
+
+            .counter {
+                height: 44px;
+                width: 179px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                border-radius: 100px;
+                background-color: #0D0B0F;
+                margin-left: 20px;
+
+                .count {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    width: 65px;
+
+                    p:first-of-type {
+                        font-size: 16px;
+                        font-weight: 700;
+                        margin: 0;
+                        color: #ffffff;
+                    }
+
+                    p:last-of-type {
+                        font-size: 10px;
+                        margin: 0;
+                        color: #B9B7EA;
+                    }
+                }
+
+                .plus-icon {
+                    background-image: url('../../images/plusIcon.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+
+                    &:active {
+                        margin-left: 5px;
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+
+        .crystals {
+            width: 290px;
+            height: 69px;
+            display: flex;
+            align-items: center;
+
+            & img {
+                position: absolute;
+            }
+
+            .counter {
+                height: 44px;
+                width: 179px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                border-radius: 100px;
+                background-color: #0D0B0F;
+                margin-left: 30px;
+
+                .count {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    width: 65px;
+
+                    p:first-of-type {
+                        font-size: 16px;
+                        font-weight: 700;
+                        margin: 0;
+                        color: #ffffff;
+                    }
+
+                    p:last-of-type {
+                        font-size: 10px;
+                        margin: 0;
+                        color: #B9B7EA;
+                    }
+                }
+
+                .plus-icon {
+                    background-image: url('../../images/plusIcon.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+
+                    &:active {
+                        margin-left: 5px;
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .home-btn {
+        width: 149px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        border: none;
+        background: url('../../images/header-btn-bg2.png');
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 0;
+        cursor: pointer;
+
+        & img {
+            width: 50px;
+            height: 45px;
+            margin-right: 11px;
+        }
+
+        &:hover {
+            font-size: 19px;
+            padding-right: 30px;
+
+            & img {
+                width: 75px;
+                height: 50px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 864px){
+        padding: 5px 10px 3px 10px;
+        .back-btn{
+            width: 50px;
+            background: none;
+            padding: 0;
+            p {
+                display: none;
+            }
+        }
+        .home-btn{
+            width: 50px;
+            background: none;
+            padding: 0;
+            p {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        height: 60px;
+        .currency {
+            width: 300px;
+
+            .coins {
+                width: 150px;
+                & img {
+                    width: 50px;
+                }
+
+                .counter {
+                    height: 23px;
+                    .count {
+                        p:first-of-type {
+                            font-size: 15px;
+                        }
+    
+                        p:last-of-type {
+                            display: none;
+                        }
+                    }
+    
+                    .plus-icon {
+                        margin-right: -15px;
+                    }
+                }
+            }
+
+            .crystals {
+                width: 150px;
+                & img {
+                    width: 50px;
+                }
+
+                .counter {
+                    height: 23px;
+                    .count {
+                        p:first-of-type {
+                            font-size: 15px;
+                        }
+    
+                        p:last-of-type {
+                            display: none;
+                        }
+                    }
+    
+                    .plus-icon {
+                        margin-right: -15px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 465px){
+        height: 50px;
+        padding: 5px 10px 0 0;
+
+        .back-btn{
+            width: 30px;
+        }
+        .home-btn{
+            width: 30px;
+        }
+    }
+}
